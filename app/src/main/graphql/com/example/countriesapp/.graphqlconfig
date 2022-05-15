@@ -1,0 +1,12 @@
+{
+  "name": "Untitled GraphQL Schema",
+  "schemaPath": "schema.sdl",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://countries.trevorblades.com",
+        "introspect": false
+      }
+    }
+  }
+}

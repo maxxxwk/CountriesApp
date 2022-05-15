@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_FD"
+    android:padding="@dimen/padding_normal">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_huge"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCountryNativeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintLeft_toLeftOf="@id/tvCountryName"
+        app:layout_constraintRight_toRightOf="@id/tvCountryName"
+        app:layout_constraintTop_toBottomOf="@id/tvCountryName" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCapital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintLeft_toLeftOf="@id/tvCountryNativeName"
+        app:layout_constraintRight_toRightOf="@id/tvCountryNativeName"
+        app:layout_constraintTop_toBottomOf="@id/tvCountryNativeName" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintLeft_toLeftOf="@id/tvCapital"
+        app:layout_constraintRight_toRightOf="@id/tvCapital"
+        app:layout_constraintTop_toBottomOf="@id/tvCapital" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPhoneCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintLeft_toLeftOf="@id/tvCurrency"
+        app:layout_constraintRight_toRightOf="@id/tvCurrency"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrency" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvContinent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintLeft_toLeftOf="@id/tvPhoneCode"
+        app:layout_constraintRight_toRightOf="@id/tvPhoneCode"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneCode" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvCapital,tvContinent,tvCountryName,tvCountryNativeName,tvCurrency,tvPhoneCode" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPendingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

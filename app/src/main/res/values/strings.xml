@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Countries App</string>
+    <string name="empty_countries_list_error_message">Cannot load countries list :(</string>
+    <string name="absent_country_details_error_message">Cannot load country details :(</string>
+    <string name="country_details_fragment_pending_message">Please select country)</string>
+    <string name="capital_text">Capital: %1$s</string>
+    <string name="continent_text">Continent: %1$s</string>
+    <string name="currency_text">Currency: %1$s</string>
+    <string name="phone_code_text">Phone code: %1$s</string>
 </resources>
